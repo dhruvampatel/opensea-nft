@@ -20,10 +20,6 @@ contract Creature is ERC721, Ownable {
         _owner = owner;
     }
     
-    function check1() public view returns(address) {
-        return _owner;
-    }
-    
     function setOwner(address newOwner, address currentOwner) public {
         require(currentOwner == _owner);
         _owner = newOwner;
